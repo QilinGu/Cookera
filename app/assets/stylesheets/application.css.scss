@@ -1,0 +1,140 @@
+$navbar-default-bg: rgba(0,61,93,.8);
+$light-orange: #ff8c00;
+$navbar-default-color: $light-orange;
+$jumbotron-bg: rgba(126, 171, 103,.6);
+$btn-success-bg: #ece9a0;
+$btn-success-color: $navbar-default-bg;
+$btn-warning-bg: #3dba98;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+    font-size: 2em;
+    color: $navbar-default-bg;
+    /*text-transform: uppercase;*/
+    letter-spacing: -1px;
+    padding-top: 9px;
+    font-weight: bold;
+}
+
+#logo:hover{
+
+    text-decoration: none;
+}
+
+body{
+    padding-top: 90px;
+    font-family: 'Signika', sans-serif;
+}
+
+.topmen{
+    float: left;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.center{
+    text-align: center;
+
+}
+
+h1, h2, h3, h4{
+   line-height: 1;
+}
+
+h1{
+    font-size: 3em;
+   letter-spacing: -3px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+h2{
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: normal;
+    color: #777;
+}
+h4{
+    font-size: 2.5em;
+    letter-spacing: -2px;
+}
+.jumbotext{
+        background-color: rgba(100,100,100,.7);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 60px;
+
+}
+
+
+.left{
+    text-align: left;
+    letter-spacing: .5px;
+}
+
+.footer{
+    margin-top: 25px;
+    border-top: 1px solid #ddd;
+    color: #777;
+}
+
+.avimg
+{
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.imgspace{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+small{
+    font-size: 14px;
+}
+
+.well{
+    background: rgba(126, 171, 103,.15);
+}
+
+th{
+    background-color: $jumbotron-bg;
+    border-left: 1px solid #999;
+    padding: 10px;
+}
+td.comment{
+    padding-left: 10px;
+    border-left: 1px solid $jumbotron-bg;
+}
+
+.jumbotron {
+    background-image: image-url("food.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%!important;
+    min-height: 500px;
+    margin-top: -12px!important;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.dropdown {
+  padding-left: 8px;
+}
+
+ul.topmen {
+  padding-left: 20px;
+}

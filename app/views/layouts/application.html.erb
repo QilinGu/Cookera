@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookera Site</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Signika:400,600,300,700' rel='stylesheet' type='text/css'>
+  <%= favicon_link_tag 'favicon.png' %>
+</head>
+<body>
+  <%= render 'layouts/navbar' %>
+  <%= render 'layouts/messages' %>
+  <% if current_page?(root_path) %>
+    <%= yield %>
+  <% else %>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
+  <% end %>
+</body>
+</html>
